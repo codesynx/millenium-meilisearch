@@ -4,8 +4,7 @@ FROM getmeili/meilisearch:latest
 # Expose the default Meilisearch port
 EXPOSE 7700
 
-# Set the environment to production
-ENV MEILI_ENV=production
+# Set the master key
+ENV MEILI_MASTER_KEY=DqjQc8YMusXjNLR2uXY0dJJT/ZvwtTg+X2Z/d9Q7Upk=
 
-# The master key should be set via environment variable at runtime
-# CMD ["meilisearch"]
+# CMD is inherited from base image
